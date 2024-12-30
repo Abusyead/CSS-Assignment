@@ -218,6 +218,8 @@ a{
         }
  }
 
+ /* favorites-section code start here */
+
 .favorites-section{
     background-color:#FDE24F ;
     margin:auto;
@@ -348,6 +350,8 @@ a{
    
 }
 
+/* buy-sell-section section code start here */
+
 .buy-sell-section{
     background-color: #f8f8f8f8;
     border-top:1px solid black ;
@@ -423,6 +427,8 @@ a{
     }
 }
 
+/* start-section code start here */
+
 .start-section{
     background-color: #CFBAFF;
     padding: 40px 60px;
@@ -454,7 +460,12 @@ a{
         background-color: white;
         color: #000000;
     }
-}
+}  
+
+
+/* footer section code start here */
+
+
 .footer-part{
     background-color: black;
     color: white;

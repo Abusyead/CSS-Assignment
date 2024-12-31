@@ -509,6 +509,147 @@ a{
         color: rgb(156, 156, 156);
     }
 }
+
+@media screen and (max-width:989px){
+    .navgation{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        height: 80px;
+        margin:0 5%;
+    
+        .right-nav{
+            & img{
+                cursor: pointer;    
+            }
+        }
+    
+        .nav-list{
+            position: fixed;
+            top: 100px;
+            background-color: orange;
+        }
+        .left-btn{
+            position: fixed;
+            top: 100px;
+            background-color: orange;
+        }
+
+        
+    } 
+
+    /* this is hero-section */
+
+
+    .hero-section{
+        height: 100vh;
+        .hero-area{
+            height: 100%;
+            padding: 10px 40px;
+            .hero{
+                padding: 20px 50px 40px;
+                width: 100%;
+ 
+
+                & form{
+                    .div-1{
+                        flex-direction: column;
+                        & select{
+                            width: 100%;
+                        }
+                    }
+                    .div-2{
+                        flex-direction: column;
+
+                        .input-1{
+                            padding: 10px 10px;
+                            width: 100%;
+                        }
+    
+                        & input:nth-child(2){
+                            width: 100%;
+                        }
+                    }   
+                }
+            }
+        }
+    }
+       /* favorites-section code start here */
+
+       .favorites-section{
+        .favorites{
+            .favor-img{
+                display: grid;
+                grid-template-columns: repeat(2 , 1fr);
+                align-content: center;
+                justify-items: center;
+            }
+        }
+    }
+       /* Features-section code start here */
+
+       .Features-section{
+ 
+        .features-container{
+            width: 100%; 
+            .hr-1{
+                display:none;
+                
+            }
+    
+            .feature-parent-item-div{
+                display:grid ;
+                grid-template-columns: repeat(1 ,minmax(350px ,1fr));
+                justify-content: center;
+                align-items: center;
+                justify-items: center;
+            }
+            .hr-2{
+                display: none;
+            }
+    
+        }
+       
+    }
+
+
+    /* buy-sell-section code start here */
+
+ .buy-sell-section{
+    .buy-sell{
+        flex-direction: column;
+        width: 100%;
+        .buy{
+            margin: 50px 50px; 
+            .buy-zelle{
+                gap: 20px;
+                width:100%;
+            }
+        }
+
+        .vartical-align::before{
+            width: 0;
+            height:0;
+ 
+        }    
+    }
+}
+        /* footer-part code start here */
+  
+    .footer-part{
+        .footer-div{ 
+            width:100%;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(1 ,1fr);
+            justify-content: space-between;
+            justify-items: center;
+        }       
+    }   
+}
+
+
+
 @media screen and (min-width:990px) and (max-width:1301px){
     
     /* favorites-section code start here */

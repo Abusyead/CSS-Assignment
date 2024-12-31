@@ -15,12 +15,17 @@ li{
 a{
     text-decoration: none;
 }
+
 .navgation{
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content:space-between;
     height: 80px;
-    margin:0 5%;
+    padding:0 5%;
+    z-index: 2000;
 
     .right-nav{
         & img{
@@ -100,6 +105,15 @@ a{
         }
 
     }
+    #click{
+        display:none;
+    }
+    .me-bar{
+        display:none;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        font-size: 25px;
+    }
     
 }
 
@@ -108,6 +122,7 @@ a{
 .hero-section{
     position: relative;
     height: 80vh;
+
 
     & img{
         position: absolute;
@@ -516,7 +531,7 @@ a{
         align-items: center;
         justify-content:space-between;
         height: 80px;
-        margin:0 5%;
+
     
         .right-nav{
             & img{
@@ -526,14 +541,46 @@ a{
     
         .nav-list{
             position: fixed;
-            top: 100px;
+            top: 80px;
             background-color: orange;
+            z-index: 999;
+            width: 100%;
+            height: 70vh;
+            left: -100%;
+            transition: .5s;
+
+            & ul{
+                flex-direction: column;
+                margin-top: 30px;
+            }
         }
-        .left-btn{
-            position: fixed;
-            top: 100px;
-            background-color: orange;
+        .left-btn{ 
+            position: fixed;  
+            z-index: 2334;
+            top: 230px;
+            flex-direction: column;
+            width: 100%;
+            left: -100%;
+            margin-top: 20px;
+            gap: 25px;
+            transition: .5s;
         }
+        .me-bar{
+            display: block;
+        }
+
+        #click:checked ~ .me-bar i::before{
+            content:'\f00d';
+        }
+        #click:checked ~ .left-btn{
+            left: 0%;
+    
+        }
+        #click:checked ~ .nav-list{
+            left: 0%;
+        }
+         
+
 
         
     } 

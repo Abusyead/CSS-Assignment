@@ -1,4 +1,4 @@
-<h1>This Website is responsive for all device</h1>
+<h1>This website is responsive on all devices.</h1>
 
 <h2>LIVE Preview</h2>
 
